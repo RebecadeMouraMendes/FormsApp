@@ -161,7 +161,7 @@ fun app() {
         )
 
 
-        Row(
+       Row(
             Modifier
                 .padding(20.dp, 0.dp, 0.dp, 0.dp)
                 .fillMaxWidth(),
@@ -303,7 +303,8 @@ fun DropdownList(
     Box(
         modifier = modifier
             .padding(20.dp, 10.dp, 0.dp, 0.dp)
-            .background(Color.LightGray)
+            .border(width = 0.5.dp, color = Color.Gray)
+            .background(Color(255, 235, 232))
             .clickable { showDropdown = true },
         contentAlignment = Alignment.Center
 
@@ -333,7 +334,7 @@ fun DropdownList(
                         }
                         Box(
                             modifier = modifier
-                                .background(Color.LightGray)
+                                .background(Color(255, 244, 242))
                                 .fillMaxWidth()
                                 .clickable {
                                     onItemClick(index)
